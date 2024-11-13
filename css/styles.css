@@ -69,6 +69,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 56px;
 }
 .navili {
     display: none;
@@ -255,4 +256,105 @@ img {
     .container {
         max-width: 768px;
     }
+}
+
+/* first section */
+
+.first-part .inscription {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    max-width: 216px;
+    margin: 0 auto 48px auto;
+    padding: 72px 24px;
+}
+.push {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 16px 32px;
+    background-color: #4d5ae5;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    margin:  auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.first-part {
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 320px;
+    height: 432px;
+    background-position: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
+}
+@media scrren and (min-width: 768px) {
+    .first-part .inscription {
+        font-size: 56px;
+        line-height: 1.1;
+        max-width: 496px;
+        height: 120px;
+    }
+    .first-part {
+       max-width: 768px;
+       height: 436px;
+        }
+}
+@media scrren and (min-width: 1158px) {
+    .first-part {
+            padding: 188px 0;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 1440px;
+            background-position: center;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            margin: 0 auto;
+        }
+    
+        .first-part .inscription {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 1.07;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #ffffff;
+            max-width: 496px;
+            margin: 0 auto 48px auto;
+        }
+    
+        .push {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            color: #ffffff;
+            cursor: pointer;
+            justify-content: flex-start;
+            background-color: #4d5ae5;
+            min-width: 169px;
+            height: 56px;
+            border: none;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 }
